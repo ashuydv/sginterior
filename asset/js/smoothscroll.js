@@ -711,7 +711,7 @@
   /***********************************************
    * PUBLIC INTERFACE
    ***********************************************/
-
+ 
   function SmoothScroll(optionsToSet) {
     for (var key in optionsToSet)
       if (defaultOptions.hasOwnProperty(key)) options[key] = optionsToSet[key];

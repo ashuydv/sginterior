@@ -8064,7 +8064,7 @@ zoom-counter
   line-height: 1;
   font-family: "Teko", Helvetica, sans-serif;
   margin-left: -2px;
-  color: #fff;
+  color: #fff; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;

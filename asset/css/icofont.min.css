@@ -6440,7 +6440,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2,mirror=1)";
   -webkit-transform: scale(-1, -1);
   transform: scale(-1, -1);
-}
+} 
 :root .icofont-rotate-90,
 :root .icofont-rotate-180,
 :root .icofont-rotate-270,

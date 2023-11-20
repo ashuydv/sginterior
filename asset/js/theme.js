@@ -799,7 +799,7 @@
       ".works-block__control_next"
     );
     var sliderElement = $(".works-block__slider");
-
+ 
     if (sliderElement.length) {
       var swiper = new Swiper(sliderElement, {
         slidesPerView: 1,
