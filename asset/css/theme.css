@@ -569,15 +569,21 @@ articles-block
 .articles-block__list {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -35px;
+  margin: 0 0px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-.articles-block__item {
-  width: 50%;
-  padding: 0 35px;
+.articles-block__item .team-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 60px;
+}
+
+.article-item__desc {
+  padding-left: 35px;
 }
 
 .articles-block__item-inner {
@@ -937,7 +943,8 @@ clients
 }
 
 .clients__item-inner {
-  opacity: 0.6;
+  opacity: 1;
+  filter: sepia(20%);
   transition: 0.3s ease;
 }
 
@@ -957,6 +964,7 @@ collapse-block
 */
 
 .collapse-block {
+  padding: 1rem;
   padding-top: 154px;
   padding-bottom: 150px;
 }
@@ -1390,7 +1398,7 @@ counter-block
 
 .counter-block__card {
   padding: 55px 52px;
-  background-image: url("../../assets/img/dot.jpg");
+  background-image: url("../img/dot.jpg");
   border-top: 5px solid #f24a00;
   text-transform: uppercase;
   margin-bottom: 80px;
@@ -4196,6 +4204,12 @@ logo
   transition: all 0.3s;
 }
 
+@media screen and (max-width: 1000px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+
 /*
 main-slide
 */
@@ -4522,6 +4536,7 @@ masonry-item
   line-height: 1.066666666666667;
   display: block;
   transition: color 0.3s;
+  margin-bottom: 1rem;
 }
 
 .masonry-item:hover .masonry-item__title {
@@ -6927,7 +6942,7 @@ single-post
   font-size: 16px;
   line-height: 1.75;
   color: #666;
-  margin-bottom: 76px;
+  margin-bottom: 0px;
 }
 
 .single-post__text p {
@@ -7537,6 +7552,16 @@ studio-reviews
   margin-bottom: 52px;
 }
 
+@media screen and (max-width: 1000px) {
+  .studio-reviews__review {
+    padding: 1rem;
+  }
+
+  .zoom-image-head__body {
+    position: relative !important;
+  }
+}
+
 .studio-reviews__review-status {
   font-size: 20px;
   font-weight: 500;
@@ -7572,7 +7597,7 @@ studio-reviews
 
 .studio-reviews__person {
   position: relative;
-  padding-left: 72px;
+  padding-left: 5px;
   padding-top: 4px;
   padding-bottom: 10px;
   min-height: 60px;
@@ -8064,7 +8089,7 @@ zoom-counter
   line-height: 1;
   font-family: "Teko", Helvetica, sans-serif;
   margin-left: -2px;
-  color: #fff; 
+  color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -8440,8 +8465,8 @@ zoom-services
 }
 
 .zoom-services__item {
-  width: 25%;
-  padding: 30px 32px 172px;
+  width: 33.33%;
+  padding: 30px 32px 170px;
   display: block;
   text-decoration: none;
   color: currentColor;

@@ -958,7 +958,7 @@
         });
 
         var swiper = new Swiper(sliderElement, {
-          slidesPerView: 1,
+          slidesPerView: 3,
           spaceBetween: 30,
           on: {
             slideChange: function slideChange() {

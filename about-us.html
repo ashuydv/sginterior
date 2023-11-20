@@ -1,1 +1,322 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Arquito - 3D Architecture &amp; Interior HTML Template">
+    <meta name="author" content="Paul, Logan Cee, Mikhail Ojereliev">
+    <title>Arquito - 3D Architecture &amp; Interior HTML Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400" rel="stylesheet">
+    <!--CSS-->
+    <link href="asset/css/icofont.min.css" rel="stylesheet">
+    <link href="asset/css/linearicons.min.css" rel="stylesheet">
+    <link href="asset/css/magnific-popup.min.css" rel="stylesheet">
+    <link href="asset/css/animsition.min.css" rel="stylesheet">
+    <link href="asset/css/swiper.min.css" rel="stylesheet">
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!--Theme CSS-->
+    <link href="asset/css/theme.css" rel="stylesheet">
+    <link href="asset/css/responsive.css" rel="stylesheet">
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="page">
+    <div style="display: none">
+        <!-- svg sprite--><svg xmlns="http://www.w3.org/2000/svg" style="width:0; height:0; visibility:hidden;">
+            <symbol id="icon_ion-icon-apps" viewBox="0 0 512 512">
+                <path
+                    d="M96 176h80V96H96v80zm120 240h80v-80h-80v80zm-120 0h80v-80H96v80zm0-120h80v-80H96v80zm120 0h80v-80h-80v80zM336 96v80h80V96h-80zm-120 80h80V96h-80v80zm120 120h80v-80h-80v80zm0 120h80v-80h-80v80z" />
+            </symbol>
+        </svg>
+    </div>
+    <div class="page__inner animsition">
+        <header class="header header_white header_fixed header_offset">
+            <div class="header__container" style="">
+                <div class="header__wrapper container-fluid">
+                    <div class="header__inner"><a href="/" class="logo header__logo">Ashu</a><button type="button"
+                            class="header__menu-button"><span class="header__menu-button-inner"></span></button></div>
+                </div>
+                <div class="header-fixed">
+                    <div class="header-fixed__bottom container">
+                        <ul class="top-menu header-fixed__menu">
+                            <li class="top-menu__menu-item">
+                                <a href="/" class="dropdown__trigger top-menu__menu-link">Home</a>
+                            </li>
+                            <li class="top-menu__menu-item">
+                                <a href="/projects.html" class="top-menu__menu-link">Projects</a>
+                            </li>
+                            <li class="top-menu__menu-item">
+                                <a href="/services.html" class="top-menu__menu-link">Services</a>
+                            </li>
+                            <li class="top-menu__menu-item">
+                                <a href="/booking.html" class="top-menu__menu-link">Booking</a>
+                            </li>
+                            <li class="top-menu__menu-item">
+                                <a href="/about-us.html" class="top-menu__menu-link">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__overlay"></div>
+            <div class="menu-panel header__menu">
+                <div class="menu-panel__inner"><button type="button"
+                        class="header__menu-button header__menu-button_fixed"><span
+                            class="header__menu-button-inner"></span></button>
+                    <div class="menu-panel__locales">
+                        <div class="menu-panel__locale link link link_active">En</div>
+                    </div>
+                    <div class="menu-panel__menu">
+                        <div class="menu-panel__menu-item"><a href="/" data-toggle="collapse"
+                                class="menu-panel__menu-link menu-panel__menu-link">Home</a>
+                        </div>
+                        <div class="menu-panel__menu-item"><a href="/projects.html" data-toggle="collapse"
+                                class="menu-panel__menu-link collapsed ">Projects</a>
+                        </div>
+                        <div class="menu-panel__menu-item"><a href="/services.html" data-toggle="collapse"
+                                class="menu-panel__menu-link collapsed collapsed">Services</a>
+                        </div>
+                        <div class="menu-panel__menu-item"><a href="/booking.html" data-toggle="collapse"
+                                class="menu-panel__menu-link collapsed collapsed">Booking</a>
+                        </div>
+                        <div class="menu-panel__menu-item"><a href="/about-us.html" data-toggle="collapse"
+                                class="menu-panel__menu-link collapsed collapsed menu-panel__menu-link_active">About
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="menu-panel__footer">
+                        <div class="socials menu-panel__socials">
+                            <a href="#" class="socials__social">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="socials__social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="socials__social">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="menu-panel__bottom">
+                            <div class="menu-panel__copyright">© 2019 <strong>Sadguru Interior.</strong> All Rights
+                                Reserved.
+                            </div>
+                            <div class="menu-panel__author">Design by <a href="#">Logan Cee</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-slide main-slide main-slide_size_medium">
+                <div class="parallax-image main-slide__image">
+                    <div data-rellax-speed="-3" data-rellax-percentage="0.5"
+                        style="background-image: url('asset/img/home-slide-5.jpg')" class="parallax-image__image"></div>
+                </div>
+                <div class="faded-block main-slide__container container">
+                    <div class="main-slide__slide-inner">
+                        <div class="main-slide__title-wrapper">
+                            <div class="main-slide__title">Turning Spaces Into Dream</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles-block">
+                <div class="container">
+                    <div class="articles-block__head">
+                        <div class="articles-block__title heading-smallest">Our team</div>
+                    </div>
+                    <div class="articles-block__list">
+                        <div class="articles-block__item">
+                            <div class="team-item row">
+                                <a href="#" class="article-item__image-wrapper col-sm-12 col-lg-6">
+                                    <img src="asset/img/mrunal.png"
+                                        style="object-fit: cover; width: 500px; height: 500px;" alt=""></a>
+                                <div class="article-item__desc col-sm-12 col-lg-6">
+                                    <a href="#" class="article-item__item-title">
+                                        Mrunal Thorat
+                                    </a>
+                                    <p class="single-post__text">
+                                        The Senior Interior Designer is responsible for providing creative and
+                                        cost-effective solutions to interior design projects. He will lead the
+                                        development of new concepts, designing, colour combination , choosing best
+                                        materials ,regular sites visits whenever required , completion of project on
+                                        time ,selecting furniture, fabrics, wall coverings, window treatments and other
+                                        elements to create an aesthetically pleasing result. The Senior Interior
+                                        Designer must be familiar with local building codes and regulations as well as a
+                                        wide variety of materials and products utilized in residential or commercial
+                                        spaces. His role requires strong creative skills combined with excellent
+                                        communication abilities to interpret client wishes into tangible designs that
+                                        meet all aesthetic requirements.
+                                    </p>
+                                    <div class="d-flex items-center">
+                                        <a class="pt-3 pb-2" style="color: #f14201;"
+                                            href="mailto:sadguruinteriors.in@gmail.com">sadguruinteriors.in@gmail.com</a>
+                                        <a class="pt-3 px-3 pb-2" style="color: #f14201;"
+                                            href="tel:+919561260467">+919561260467</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-block__item">
+                            <div class="team-item row">
+                                <div class="article-item__desc col-sm-12 col-lg-6">
+                                    <a href="#" class="article-item__item-title">
+                                        Mukul Sawant
+                                    </a>
+                                    <p class="single-post__text">
+                                        The Digital Marketing Head is responsible for providing creative and
+                                        cost-effective solutions to interior design projects. They will lead the
+                                        development of new concepts and other elements to create an aesthetically
+                                        pleasing result. The Project Manager must be familiar with local building codes
+                                        and regulations . This role requires strong creative skills combined with
+                                        excellent communication abilities to interpret client wishes into tangible
+                                        designs that meet all aesthetic requirements.
+                                    </p>
+                                    <div class="d-flex align-items-center justify-items-center">
+                                        <a class="pt-3 pb-2" style="color: #f14201;"
+                                            href="mailto:sawantmukul7@gmail.com">sawantmukul7@gmail.com
+                                        </a>
+                                        <a class="pt-3 px-3 pb-2" style="color: #f14201;"
+                                            href="tel:++91 8779638665">+918779638665</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="article-item__image-wrapper col-sm-12 col-lg-6">
+                                    <img src="asset/img/mukul.png"
+                                        style="object-fit: cover; width: 500px; height: 500px;" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients-block">
+                <div class="container">
+                    <div class="clients-block__head">
+                        <div class="clients-block__title heading-smallest">Our Clients</div>
+                    </div>
+                    <div class="clients" style="padding: 5rem 0;">
+                        <div class="clients__list">
+                            <div class="clients__item">
+                                <div class="clients__item-inner"><img src="asset/img/client-1.png" alt=""></div>
+                            </div>
+                            <div class="clients__item">
+                                <div class="clients__item-inner"><img src="asset/img/client-2.png" alt=""></div>
+                            </div>
+                            <div class="clients__item">
+                                <div class="clients__item-inner"><img src="asset/img/client-3.png" alt=""></div>
+                            </div>
+                            <div class="clients__item">
+                                <div class="clients__item-inner"><img src="asset/img/client-4.png" alt=""></div>
+                            </div>
+                            <div class="clients__item">
+                                <div class="clients__item-inner"><img src="asset/img/client-5.png" alt=""></div>
+                            </div>
+                            <div class="clients__item">
+                                <div class="clients__item-inner"><img src="asset/img/client-6.png" alt=""></div>
+                            </div>
+                            <div class="clients__item">
+                                <div class="clients__item-inner"><img src="asset/img/client-7.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer-studio footer footer_fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-studio__column col-6 col-xl-6">
+                        <div class="footer-studio__group-title">Company</div>
+                        <ul class="footer-studio__list">
+                            <li class="footer-studio__list-item"><a href="/about-us.html"
+                                    class="footer-studio__list-link">About</a>
+                            </li>
+                            <li class="footer-studio__list-item"><a href="/booking.html"
+                                    class="footer-studio__list-link">Book Now</a>
+                            </li>
+                            <li class="footer-studio__list-item"><a href="/projects.html"
+                                    class="footer-studio__list-link">Projects</a>
+                            </li>
+                            <li class="footer-studio__list-item"><a href="/services.html"
+                                    class="footer-studio__list-link">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-studio__column col-12 col-sm-6 col-xl-6">
+                        <div class="footer-studio__group-title">Get In Touch</div>
+                        <p>FW67+3J8, Undri - Hadapsar Rd, Kad Nagar, Undri, <br> Pune, Maharashtra 411028</p>
+                        <p><a href="mailto:sadguruinteriors.in@gmail.com">sadguruinteriors.in@gmail.com</a></p>
+                        <p>+91 95612 60467</p>
+                    </div>
+                    <!-- <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
+						<div class="footer-studio__group-title">Newsletter</div>
+						<p>Subscribe and get 10% off from our furniture store</p>
+						<form action="#" class="footer-studio__form"><input placeholder="Enter your email..."
+								class="footer-studio__input" type="text"><button
+								class="footer-studio__submit">Subscribe<span
+									class="footer-studio__submit-icon fa-solid fa-caret-right"></span></button></form>
+					</div> -->
+                </div>
+                <div class="footer-studio__bottom">
+                    <div class="row">
+                        <div class="footer-studio__column col-12 col-sm-6">
+                            <div class="footer-studio__copyright">© 2019 <strong>Sadguru Interior.</strong> All Rights
+                                Reserved.
+                                Design by <a href="mailto:ashu.ydv2001@gmail.com">ashuydv</a></div>
+                        </div>
+                        <div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3">
+                            <div class="footer-studio__socials">
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--JS-->
+    <script src="asset/js/polyfill.min.js"></script>
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/jquery.viewport.min.js"></script>
+    <script src="asset/js/jQuerySimpleCounter.min.js"></script>
+    <script src="asset/js/jquery.magnific-popup.min.js"></script>
+    <script src="asset/js/isotope.pkgd.min.js"></script>
+    <script src="asset/js/animsition.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/rellax.min.js"></script>
+    <script src="asset/js/swiper.min.js"></script>
+    <script src="asset/js/smoothscroll.js"></script>
+    <script src="asset/js/svg4everybody.legacy.min.js"></script>
+    <script src="asset/js/TweenMax.min.js"></script>
+    <script src="asset/js/TimelineLite.min.js"></script>
+    <script src="asset/js/typed.min.js"></script>
+    <script src="asset/js/vivus.min.js"></script>
+    <!--Theme JS-->
+    <script src="asset/js/theme.js"></script>
+</body>
+
+</html>

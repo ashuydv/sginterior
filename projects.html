@@ -15,10 +15,10 @@
     <link href="asset/css/animsition.min.css" rel="stylesheet">
     <link href="asset/css/swiper.min.css" rel="stylesheet">
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!--Theme CSS-->
     <link href="asset/css/theme.css" rel="stylesheet">
     <link href="asset/css/responsive.css" rel="stylesheet">
-    <link href="asset/css/dark.css" rel="stylesheet">
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -37,16 +37,15 @@
             <symbol id="icon_ion-icon-apps" viewBox="0 0 512 512">
                 <path
                     d="M96 176h80V96H96v80zm120 240h80v-80h-80v80zm-120 0h80v-80H96v80zm0-120h80v-80H96v80zm120 0h80v-80h-80v80zM336 96v80h80V96h-80zm-120 80h80V96h-80v80zm120 120h80v-80h-80v80zm0 120h80v-80h-80v80z" />
-            </symbol> 
+            </symbol>
         </svg>
     </div>
     <div class="page__inner animsition">
-        <header class="header header_white header_fixed header_offset">
+        <header class="header  header_fixed header_offset">
             <div class="header__container" style="">
                 <div class="header__wrapper container-fluid">
-                    <div class="header__inner"><a href="/" class="logo header__logo">Sadguru Interior</a><button
-                            type="button" class="header__menu-button"><span
-                                class="header__menu-button-inner"></span></button></div>
+                    <div class="header__inner"><a href="/" class="logo header__logo">Ashu</a><button type="button"
+                            class="header__menu-button"><span class="header__menu-button-inner"></span></button></div>
                 </div>
                 <div class="header-fixed">
                     <div class="header-fixed__bottom container">
@@ -55,7 +54,8 @@
                                 <a href="/" class="dropdown__trigger top-menu__menu-link">Home</a>
                             </li>
                             <li class="top-menu__menu-item">
-                                <a href="/projects.html" class="top-menu__menu-link">Projects</a>
+                                <a href="/projects.html"
+                                    class="top-menu__menu-link menu-panel__menu-link_active">Projects</a>
                             </li>
                             <li class="top-menu__menu-item">
                                 <a href="/services.html" class="top-menu__menu-link">Services</a>
@@ -77,15 +77,13 @@
                             class="header__menu-button-inner"></span></button>
                     <div class="menu-panel__locales">
                         <div class="menu-panel__locale link link link_active">En</div>
-                        <div class="menu-panel__locale link">Fr</div>
-                        <div class="menu-panel__locale link">De</div>
                     </div>
                     <div class="menu-panel__menu">
                         <div class="menu-panel__menu-item"><a href="/" data-toggle="collapse"
-                                class="menu-panel__menu-link menu-panel__menu-link menu-panel__menu-link_active">Home</a>
+                                class="menu-panel__menu-link collapsed">Home</a>
                         </div>
                         <div class="menu-panel__menu-item"><a href="/projects.html" data-toggle="collapse"
-                                class="menu-panel__menu-link collapsed">Projects</a>
+                                class="menu-panel__menu-link collapsed menu-panel__menu-link_active">Projects</a>
                         </div>
                         <div class="menu-panel__menu-item"><a href="/services.html" data-toggle="collapse"
                                 class="menu-panel__menu-link collapsed collapsed">Services</a>
@@ -98,13 +96,17 @@
                         </div>
                     </div>
                     <div class="menu-panel__footer">
-                        <div class="socials menu-panel__socials"><a href="#" class="socials__social icofont-twitter">
-                                <div class="visually-hidden">twitter</div>
-                            </a><a href="#" class="socials__social icofont-facebook">
-                                <div class="visually-hidden">facebook</div>
-                            </a><a href="#" class="socials__social icofont-google-plus">
-                                <div class="visually-hidden">google plus</div>
-                            </a></div>
+                        <div class="socials menu-panel__socials">
+                            <a href="#" class="socials__social">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="socials__social">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="socials__social">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
                         <div class="menu-panel__bottom">
                             <div class="menu-panel__copyright">© 2019 <strong>Sadguru Interior.</strong> All Rights
                                 Reserved.
@@ -122,152 +124,272 @@
                     <ul class="heading-default__breadcrumbs">
                         <li class="heading-default__breadcrumb-item"><a href="#"
                                 class="heading-default__breadcrumb-link">Home</a></li>
-                        <li class="heading-default__breadcrumb-item">Projects</li>
+                        <li class="heading-default__breadcrumb-item">Works</li>
                     </ul>
                 </div>
             </div>
             <div class="masonry masonry-block">
                 <div class="container">
                     <div class="masonry-block__head">
-                        <div class="masonry__primary-filters">
-                            <button type="button" data-tab-button="category"
-                                class="masonry__primary-filter-button masonry__primary-filter-button_active">Category</button><button
-                                type="button" data-tab-button="time"
-                                class="masonry__primary-filter-button">Time</button><button type="button"
-                                data-tab-button="program" class="masonry__primary-filter-button">Program</button></div>
-                        <div class="masonry__secondary-filters-wrapper">
-                            <div data-tab-group="category"
-                                class="masonry__secondary-filters masonry__secondary-filters_active"><button
-                                    type="button" data-filter="*"
-                                    class="masonry__secondary-filter-button masonry__secondary-filter-button_active">All</button><button
-                                    type="button" data-filter="Architecture"
-                                    class="masonry__secondary-filter-button">Architecture</button><button type="button"
-                                    data-filter="Interior Design" class="masonry__secondary-filter-button">Interior
-                                    Design</button><button type="button" data-filter="Industrial Design"
-                                    class="masonry__secondary-filter-button">Industrial Design</button><button
-                                    type="button" data-filter="3d Modeling" class="masonry__secondary-filter-button">3d
-                                    Modeling</button><button type="button" data-filter="Landscape"
-                                    class="masonry__secondary-filter-button">Landscape</button></div>
-                            <div data-tab-group="time" style="display: none" class="masonry__secondary-filters"><button
-                                    type="button" data-filter="*"
-                                    class="masonry__secondary-filter-button">All</button><button type="button"
-                                    data-filter="August" class="masonry__secondary-filter-button">August</button><button
-                                    type="button" data-filter="July"
-                                    class="masonry__secondary-filter-button">July</button><button type="button"
-                                    data-filter="June" class="masonry__secondary-filter-button">June</button><button
-                                    type="button" data-filter="November"
-                                    class="masonry__secondary-filter-button">November</button><button type="button"
-                                    data-filter="October"
-                                    class="masonry__secondary-filter-button">October</button><button type="button"
-                                    data-filter="September" class="masonry__secondary-filter-button">September</button>
-                            </div>
-                            <div data-tab-group="program" style="display: none" class="masonry__secondary-filters">
-                                <button type="button" data-filter="*"
-                                    class="masonry__secondary-filter-button">All</button><button type="button"
-                                    data-filter="Commercial"
-                                    class="masonry__secondary-filter-button">Commercial</button><button type="button"
-                                    data-filter="Cultural"
-                                    class="masonry__secondary-filter-button">Cultural</button><button type="button"
-                                    data-filter="Educational"
-                                    class="masonry__secondary-filter-button">Educational</button><button type="button"
-                                    data-filter="Housing"
-                                    class="masonry__secondary-filter-button">Housing</button><button type="button"
-                                    data-filter="Public" class="masonry__secondary-filter-button">Public</button>
-                            </div>
-                        </div>
+                        <span class="masonry-item__title">1.5 BHK, Bhandup, Mumbai</span>
                     </div>
                     <div class="masonry__grid masonry-block__grid row">
                         <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
                                 class="masonry-item" data-filters="Architecture, August, Commercial">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-1.jpg"
-                                        alt="" class="masonry-item__image" /></div><span
-                                    class="masonry-item__title">Central
-                                    Bank, 
-                                    Scotland</span><span class="masonry-item__category">Architecture</span>
+                                        src="asset/img/1.5BhkBhandupMumbai/IMG_3845.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                         <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
                                 class="masonry-item"
                                 data-filters="Architecture, Industrial Design, 3d Modeling, August, Commercial">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-2.jpg"
-                                        alt="" class="masonry-item__image" /></div><span
-                                    class="masonry-item__title">Capri
-                                    Ocean
-                                    Museum</span><span class="masonry-item__category">Architecture, Industrial Design,
-                                    3d Modeling</span>
+                                        src="asset/img/1.5BhkBhandupMumbai/IMG_3865.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                         <div class="masonry__item masonry-block__item-block col-12 col-sm-6 col-lg-4"><a href="#"
                                 class="masonry-item"
                                 data-filters="Architecture, Interior Design, 3d Modeling, July, Cultural">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-3.jpg"
-                                        alt="" class="masonry-item__image" /></div><span
-                                    class="masonry-item__title">Dustin
-                                    Villa,
-                                    Spain</span><span class="masonry-item__category">Architecture, Interior Design, 3d
-                                    Modeling</span>
+                                        src="asset/img/1.5BhkBhandupMumbai/IMG_3875.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                         <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
                                 class="masonry-item" data-filters="Architecture, Industrial Design, June, Cultural">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-4.jpg"
-                                        alt="" class="masonry-item__image" /></div><span
-                                    class="masonry-item__title">Local
-                                    Financial Office,
-                                    Iasi, Romania</span><span class="masonry-item__category">Architecture, Industrial
-                                    Design</span>
+                                        src="asset/img/1.5BhkBhandupMumbai/IMG_3880.JPG" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                         <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
                                 class="masonry-item"
                                 data-filters="Interior Design, Industrial Design, June, Educational">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-5.jpg"
-                                        alt="" class="masonry-item__image" /></div><span
-                                    class="masonry-item__title">Justin
-                                    Burney Villa,
-                                    NY</span><span class="masonry-item__category">Interior Design, Industrial
-                                    Design</span>
+                                        src="asset/img/1.5BhkBhandupMumbai/IMG_3900.JPG" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                         <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
                                 class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-6.jpg"
-                                        alt="" class="masonry-item__image" /></div><span
-                                    class="masonry-item__title">Kristina
-                                    House,
-                                    Germany</span><span class="masonry-item__category">3D Modeling, Interior
-                                    Design</span>
+                                        src="asset/img/1.5BhkBhandupMumbai/IMG_3879.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                    </div>
+                    <div class="masonry-block__head">
+                        <span class="masonry-item__title">2 BHK, Pashan, Pune</span>
+                    </div>
+                    <div class="masonry__grid masonry-block__grid row">
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="Architecture, August, Commercial">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5726.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                         <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
                                 class="masonry-item"
-                                data-filters="Architecture, 3D Modeling, 3d Modeling, October, Public">
+                                data-filters="Architecture, Industrial Design, 3d Modeling, August, Commercial">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-7.jpg"
-                                        alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Art
-                                    Museum,
-                                    Poland</span><span class="masonry-item__category">Architecture, 3D Modeling, 3d
-                                    Modeling</span>
+                                        src="asset/img/2bhkpashanPune/IMG_5753.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item-block col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Architecture, Interior Design, 3d Modeling, July, Cultural">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5474.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="Architecture, Industrial Design, June, Cultural">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5483.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                         <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
                                 class="masonry-item"
-                                data-filters="Architecture, Interior Design, Landscape, October, Public">
+                                data-filters="Interior Design, Industrial Design, June, Educational">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-8.jpg"
-                                        alt="" class="masonry-item__image" /></div><span
-                                    class="masonry-item__title">Keanu
-                                    Villa,
-                                    Spain</span><span class="masonry-item__category">Architecture, Interior Design,
-                                    Landscape</span>
+                                        src="asset/img/2bhkpashanPune/IMG_5485.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                         <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
-                                class="masonry-item" data-filters="Interior Design, Landscape, September, Public">
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
                                 <div class="masonry-item__image-wrapper"><img
-                                        src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-9.jpg"
-                                        alt="" class="masonry-item__image" /></div><span
-                                    class="masonry-item__title">David
-                                    Villa,
-                                    Denmark</span><span class="masonry-item__category">Interior Design, Landscape</span>
+                                        src="asset/img/2bhkpashanPune/IMG_5492.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5728.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5813.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5814.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                    </div>
+                    <div class="masonry-block__head">
+                        <span class="masonry-item__title">2 BHK, Ravet, Pune</span>
+                    </div>
+                    <div class="masonry__grid masonry-block__grid row">
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="Architecture, August, Commercial">
+                                <div class="masonry-item__image-wrapper"><img src="asset/img/2bhkRavetPune/1.png" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Architecture, Industrial Design, 3d Modeling, August, Commercial">
+                                <div class="masonry-item__image-wrapper"><img src="asset/img/2bhkRavetPune/7.png" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item-block col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Architecture, Interior Design, 3d Modeling, July, Cultural">
+                                <div class="masonry-item__image-wrapper"><img src="asset/img/2bhkRavetPune/12.png"
+                                        alt="" class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="Architecture, Industrial Design, June, Cultural">
+                                <div class="masonry-item__image-wrapper"><img src="asset/img/2bhkRavetPune/21.png"
+                                        alt="" class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Interior Design, Industrial Design, June, Educational">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5811.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5492.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img src="asset/img/2bhkRavetPune/17.png"
+                                        alt="" class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img src="asset/img/2bhkRavetPune/22.png"
+                                        alt="" class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkpashanPune/IMG_5773.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                    </div>
+                    <div class="masonry-block__head">
+                        <span class="masonry-item__title">2 BHK, Sinhgad Rd, Pune</span>
+                    </div>
+                    <div class="masonry__grid masonry-block__grid row">
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="Architecture, August, Commercial">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2633.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Architecture, Industrial Design, 3d Modeling, August, Commercial">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2638.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item-block col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Architecture, Interior Design, 3d Modeling, July, Cultural">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2655.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="Architecture, Industrial Design, June, Cultural">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2653.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Interior Design, Industrial Design, June, Educational">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2659.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2665.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2673.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                    </div>
+                    <div class="masonry-block__head">
+                        <span class="masonry-item__title">3 BHK, Hadapsar, Pune</span>
+                    </div>
+                    <div class="masonry__grid masonry-block__grid row">
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="Architecture, August, Commercial">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/3BhkHadapsarPune/IMG_E6184.jpg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Architecture, Industrial Design, 3d Modeling, August, Commercial">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/3BhkHadapsarPune/IMG_E6199.jpg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item-block col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Architecture, Interior Design, 3d Modeling, July, Cultural">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/3BhkHadapsarPune/IMG_6127.jpg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="Architecture, Industrial Design, June, Cultural">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/3BhkHadapsarPune/IMG_6358.jpg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item"
+                                data-filters="Interior Design, Industrial Design, June, Educational">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2659.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2665.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
+                            </a></div>
+                        <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#"
+                                class="masonry-item" data-filters="3D Modeling, Interior Design, November, Housing">
+                                <div class="masonry-item__image-wrapper"><img
+                                        src="asset/img/2bhkSinhgadRdPune/IMG_2673.jpeg" alt=""
+                                        class="masonry-item__image" /></div>
                             </a></div>
                     </div>
                 </div>
@@ -277,58 +399,68 @@
                 </div>
             </div>
         </main>
-        <footer class="footer-default footer">
+        <footer class="footer-studio footer footer_fixed">
             <div class="container">
-                <div class="footer-default__head"><a href="/" class="logo">Arquito</a></div>
                 <div class="row">
-                    <div class="footer-default__column col-12 col-sm-6 col-md-3">
-                        <div class="footer-default__group-title">company</div>
-                        <p>166 Main Street, Beverly Hills<br />CA, 90210</p>
-                        <p><a href="mailto:infor@arquito.com">infor@arquito.com</a></p>
-                        <p>+0085 346 2188</p>
-                    </div>
-                    <div class="footer-default__column col-12 col-sm-6 col-md-3">
-                        <div class="footer-default__group-title">help center</div>
-                        <ul class="footer-default__list">
-                            <li class="footer-default__list-item"><a href="#" class="footer-default__list-link">FAQs</a>
+                    <div class="footer-studio__column col-6 col-xl-6">
+                        <div class="footer-studio__group-title">Company</div>
+                        <ul class="footer-studio__list">
+                            <li class="footer-studio__list-item"><a href="/about-us.html"
+                                    class="footer-studio__list-link">About</a>
                             </li>
-                            <li class="footer-default__list-item"><a href="#" class="footer-default__list-link">Terms &
-                                    Conditions</a></li>
-                            <li class="footer-default__list-item"><a href="#"
-                                    class="footer-default__list-link">Privacy</a></li>
-                            <li class="footer-default__list-item"><a href="#" class="footer-default__list-link">Help</a>
+                            <li class="footer-studio__list-item"><a href="/booking.html"
+                                    class="footer-studio__list-link">Book Now</a>
                             </li>
-                            <li class="footer-default__list-item"><a href="#"
-                                    class="footer-default__list-link">Services</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-default__column col-12 col-sm-6 col-md-3">
-                        <div class="footer-default__group-title">quick links</div>
-                        <ul class="footer-default__list">
-                            <li class="footer-default__list-item"><a href="#"
-                                    class="footer-default__list-link">About</a></li>
-                            <li class="footer-default__list-item"><a href="#"
-                                    class="footer-default__list-link">Contact</a></li>
-                            <li class="footer-default__list-item"><a href="#"
-                                    class="footer-default__list-link">Career</a></li>
-                            <li class="footer-default__list-item"><a href="#" class="footer-default__list-link">Blog</a>
+                            <li class="footer-studio__list-item"><a href="/projects.html"
+                                    class="footer-studio__list-link">Projects</a>
+                            </li>
+                            <li class="footer-studio__list-item"><a href="/services.html"
+                                    class="footer-studio__list-link">Services</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-default__column col-12 col-sm-6 col-md-3">
-                        <div class="socials footer-default__socials"><a href="#"
-                                class="socials__social icofont-twitter">
-                                <div class="visually-hidden">twitter</div>
-                            </a><a href="#" class="socials__social icofont-facebook">
-                                <div class="visually-hidden">facebook</div>
-                            </a><a href="#" class="socials__social icofont-google-plus">
-                                <div class="visually-hidden">google plus</div>
-                            </a></div>
+                    <div class="footer-studio__column col-12 col-sm-6 col-xl-6">
+                        <div class="footer-studio__group-title">Get In Touch</div>
+                        <p>FW67+3J8, Undri - Hadapsar Rd, Kad Nagar, Undri, <br> Pune, Maharashtra 411028</p>
+                        <p><a href="mailto:sadguruinteriors.in@gmail.com">sadguruinteriors.in@gmail.com</a></p>
+                        <p>+91 95612 60467</p>
                     </div>
+                    <!-- <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
+						<div class="footer-studio__group-title">Newsletter</div>
+						<p>Subscribe and get 10% off from our furniture store</p>
+						<form action="#" class="footer-studio__form"><input placeholder="Enter your email..."
+								class="footer-studio__input" type="text"><button
+								class="footer-studio__submit">Subscribe<span
+									class="footer-studio__submit-icon fa-solid fa-caret-right"></span></button></form>
+					</div> -->
                 </div>
-                <div class="footer-default__bottom">
-                    <div class="footer-default__copyright">© 2019 <strong>ARQUITO.</strong> All Rights Reserved.</div>
-                    <div class="footer-default__author">Design by <a href="#">Logan Cee</a></div>
+                <div class="footer-studio__bottom">
+                    <div class="row">
+                        <div class="footer-studio__column col-12 col-sm-6">
+                            <div class="footer-studio__copyright">© 2019 <strong>Sadguru Interior.</strong> All Rights
+                                Reserved.
+                                Design by <a href="mailto:ashu.ydv2001@gmail.com">ashuydv</a></div>
+                        </div>
+                        <div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3">
+                            <div class="footer-studio__socials">
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="#" class="footer-studio__social">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
