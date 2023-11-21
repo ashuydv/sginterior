@@ -1314,8 +1314,8 @@ contact-block
 
 .contact-block__input-text:focus,
 .contact-block__input-textarea:focus {
-  border-color: #fff;
-  color: white;
+  border-color: #222;
+  color: #222;
 }
 
 .contact-block__input-text {
@@ -3412,7 +3412,7 @@ header-fixed
   .logo,
   .header__logo {
     max-width: 20% !important;
-  }
+  } 
 
   .header__container {
     padding-top: 25px !important;
@@ -6501,7 +6501,7 @@ reviews-block
 
 .reviews-block__slide {
   background: #f7f7f7;
-  padding: 44px 50px;
+  padding: 0px;
   color: #222;
 }
 
