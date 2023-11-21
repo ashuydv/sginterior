@@ -18,7 +18,6 @@
 	<!--Theme CSS-->
 	<link href="asset/css/theme.css" rel="stylesheet">
 	<link href="asset/css/responsive.css" rel="stylesheet">
-	<link href="asset/css/dark.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
 	<!--Favicons-->
@@ -55,11 +54,16 @@
 		</svg>
 	</div>
 	<div class="page__inner animsition" style="animation-duration: 500ms; opacity: 1;">
-		<header class="header  header_fixed header_offset">
+		<header class="header header_fixed header_offset">
 			<div class="header__container" style="">
 				<div class="header__wrapper container-fluid">
-					<div class="header__inner"><a href="/" class="logo header__logo">Ashu</a><button type="button"
-							class="header__menu-button"><span class="header__menu-button-inner"></span></button></div>
+					<div class="header__inner">
+						<a href="/" class="logo header__logo">
+							<img src="asset/img/logo.jpg" class="img-fluid" alt="">
+						</a>
+						<button type="button" class="header__menu-button"><span
+								class="header__menu-button-inner"></span></button>
+					</div>
 				</div>
 				<div class="header-fixed">
 					<div class="header-fixed__bottom container">
@@ -78,6 +82,60 @@
 							</li>
 							<li class="top-menu__menu-item">
 								<a href="/about-us.html" class="top-menu__menu-link">About Us</a>
+							</li>
+							<li class="top-menu__menu-item">
+								<div class="dropdown">
+									<a href="/" class="dropdown__trigger top-menu__menu-link"><i
+											style="font-size: 1rem;" class="fa-solid fa-envelope-circle-check"></i></a>
+									<div class="dropdown__menu">
+										<div class="dropdown__column">
+											<div class="dropdown__item">
+												<a href="tel:+91 95612 60467" class="dropdown__link">
+													<div style="display: flex; align-items: start;">
+														<div class="mr-3">
+															<i class="fa-solid fa-phone"></i>
+														</div>
+														<div style="width: 100% !important">
+															<p>+91 95612 60467</p>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="dropdown__item">
+												<a href="mailto:sadguruinteriors.in@gmail.com" class="dropdown__link">
+													<div style="display: flex; align-items: start;">
+														<div class="mr-3">
+															<i class="fa-solid fa-envelope"></i>
+														</div>
+														<div>
+															<p>sadguruinteriors.in@gmail.com</p>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="dropdown__item">
+												<div class="d-flex mt-4">
+													<a href="https://www.facebook.com/sadguruinterior?mibextid=ZbWKwL"
+														class="socials__social">
+														<i class="fa-brands fa-facebook-f"></i>
+													</a>
+													<a href="https://www.instagram.com/sadguru_interior_and_associate/"
+														class="socials__social">
+														<i class="fa-brands fa-instagram"></i>
+													</a>
+													<a href="https://youtube.com/@Interiordesigner_pune?si=l4wJArfzTgiF5K7u"
+														class="socials__social">
+														<i class="fa-brands fa-youtube"></i>
+													</a>
+													<a href="https://wa.me/message/I4NUI666D7FSE1"
+														class="socials__social">
+														<i class="fa-brands fa-whatsapp"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -110,21 +168,26 @@
 					</div>
 					<div class="menu-panel__footer">
 						<div class="socials menu-panel__socials">
-							<a href="#" class="socials__social">
-								<i class="fa-brands fa-x-twitter"></i>
+							<a href="https://www.facebook.com/sadguruinterior?mibextid=ZbWKwL" class="socials__social">
+								<i class="fa-brands fa-facebook-f"></i>
 							</a>
-							<a href="#" class="socials__social">
-								<i class="fa-brands fa-x-twitter"></i>
+							<a href="https://www.instagram.com/sadguru_interior_and_associate/" class="socials__social">
+								<i class="fa-brands fa-instagram"></i>
 							</a>
-							<a href="#" class="socials__social">
-								<i class="fa-brands fa-x-twitter"></i>
+							<a href="https://youtube.com/@Interiordesigner_pune?si=l4wJArfzTgiF5K7u"
+								class="socials__social">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+							<a href="https://wa.me/message/I4NUI666D7FSE1" class="socials__social">
+								<i class="fa-brands fa-whatsapp"></i>
 							</a>
 						</div>
 						<div class="menu-panel__bottom">
-							<div class="menu-panel__copyright">© 2019 <strong>Sadguru Interior.</strong> All Rights
+							<div class="menu-panel__copyright">© 2023 <strong>Sadguru Interior.</strong> All Rights
 								Reserved.
 							</div>
-							<div class="menu-panel__author">Design by <a href="#">Logan Cee</a></div>
+							<div class="menu-panel__author">Design by <a
+									href="mailto:ashu.ydv2001@gmail.com">ashuydv</a></div>
 						</div>
 					</div>
 				</div>
@@ -141,7 +204,7 @@
 					<div class="zoom-image-head__content container"
 						style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
 						<div class="zoom-image-head__subtitle" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-							Hello from </div>
+						</div>
 						<div class="zoom-image-head__title" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
 							Sadguru<br>Interior</div>
 						<div class="zoom-image-head__text" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -153,24 +216,15 @@
 			</div>
 			<div class="zoom-counter">
 				<div class="container">
-					<div class="zoom-counter__inner">
-						<!-- <div style="background-image: url(asset/img/zoom-count-bg.jpg); opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-							class="zoom-counter__card">
-							<div class="zoom-counter__card-title">
-								<p>since</p>
-								<p>1991</p>
-							</div>
-							<div data-counter-value="25" class="zoom-counter__card-value js-counter animated">25</div>
-							<div class="zoom-counter__card-description">years<br>experience</div>
-						</div> -->
-						<div class="zoom-counter__card">
+					<div class="zoom-counter__inner row">
+						<div class="zoom-counter__card col-lg-6 col-sm-12">
 							<iframe
 								src="https://player.vimeo.com/video/876511855?muted=1&amp;autoplay=1&amp;autopause=0&amp;controls=0&amp;loop=1&amp;background=1&amp;app_id=122963"
 								width="400" height="660" frameborder="0"
 								allow="autoplay; fullscreen; picture-in-picture"
 								title="SaveInsta.App - 3211198681973155681.mp4" data-ready="true"></iframe>
 						</div>
-						<div class="zoom-counter__info">
+						<div class="zoom-counter__info col-lg-6 col-sm-12">
 							<div class="zoom-counter__subtitle">About Us</div>
 							<div class="zoom-counter__title" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
 								Providing Affordable Interior Designs For Your Home
@@ -230,13 +284,13 @@
 					</button>
 					<div class="zoom-slider__slider swiper-container swiper-container-horizontal">
 						<div class="swiper-wrapper">
-							<div style="background-image: url('asset/img/1.5BhkBhandupMumbai/IMG_3844.jpeg'); width: 100%;"
+							<div style="background-image: url('asset/img/flat-1.jpg'); width: 100%;"
 								data-filter="residential" class="zoom-slider__slide swiper-slide swiper-slide-active">
 							</div>
-							<div style="background-image: url('asset/img/2bhkpashanPune/IMG_5726.jpeg'); width: 100%;"
+							<div style="background-image: url('asset/img/flat-2.jpg'); width: 100%;"
 								data-filter="architecture" class="zoom-slider__slide swiper-slide swiper-slide-next">
 							</div>
-							<div style="background-image: url('asset/img/2bhkRavetPune/5.png'); width: 100%;"
+							<div style="background-image: url('asset/img/flat-3.jpg'); width: 100%;"
 								data-filter="residential" class="zoom-slider__slide swiper-slide"></div>
 							<div style="background-image: url('asset/img/2bhkSinhgadRdPune/IMG_2629.jpeg'); width: 100%;"
 								data-filter="interior" class="zoom-slider__slide swiper-slide"></div>
@@ -263,10 +317,7 @@
 								style="width: 344.25px;"><span class="zoom-slider__button-title">2 BHK, Wakad,
 									Pune</span></button><button type="button" data-filter="landscape"
 								class="zoom-slider__button swiper-slide" style="width: 344.25px;"><span
-									class="zoom-slider__button-title">3 BHK, Hadapsar, Pune</span></button><button
-								type="button" data-filter="residential" class="zoom-slider__button swiper-slide"
-								style="width: 344.25px;"><span class="zoom-slider__button-title">Modular
-									Kitchen Projects</span></button></div>
+									class="zoom-slider__button-title">3 BHK, Hadapsar, Pune</span></button></div>
 						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 					</div>
 				</div>
@@ -328,6 +379,12 @@
 										<i class="fa-solid fa-house-circle-check"></i></span><span
 										class="zoom-services__more">more</span></span></a>
 							<a href="#" class="zoom-services__item">
+								<span class="zoom-services__item-title">4BHK
+									Projects</span><span class="zoom-services__item-footer"><span
+										class="zoom-services__item-icon">
+										<i class="fa-solid fa-mountain-city"></i></span><span
+										class="zoom-services__more">more</span></span></a>
+							<a href="#" class="zoom-services__item">
 								<span class="zoom-services__item-title">Studio Apartments
 								</span><span class="zoom-services__item-footer"><span class="zoom-services__item-icon">
 										<i class="fa-solid fa-building"></i></span><span
@@ -372,7 +429,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="works-block works-block_template_zoom" style="background: #141414;">
+			<div class="zoom-counter">
+				<div class="container">
+					<div class="zoom-counter__inner row">
+						<div class="zoom-counter__info col-lg-6">
+							<div class="zoom-counter__subtitle">what we stand for</div>
+							<div class="zoom-counter__title" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+								Interior Designing Focused on Quality and Practicality
+							</div>
+							<div class="zoom-counter__text" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+								<p>You can trust us to not only create your dream home but also do so while maintaining
+									the highest quality. Our focus is to provide innovative designs that prioritize both
+									pragmatism and comfort without compromising on aesthetic beauty. We make sure that
+									every piece of furniture or element of décor adds value, allowing you to experience
+									a space full of functionality as well as real luxury.
+								</p>
+							</div><a href="booking.html"
+								class="zoom-counter__read-more zoom-counter__read-more_inverted"
+								style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">book a call now</a>
+						</div>
+						<div class="zoom-counter__card col-lg-6">
+							<img src="asset/img/poster.jpg" class="img-fluid" style="object-fit: cover;" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="works-block works-block_template_zoom">
 				<div class="works-block__main container">
 					<div class="row">
 						<div class="col-10 col-md-11">
@@ -392,56 +474,56 @@
 					<div class="works-block__slider swiper-container swiper-container-horizontal">
 						<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/measurement.png" alt="" class="works-item__image" />
 								</div>
 								<h2 class="works-slider__title">Measurement</h2>
 							</div>
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/basicquotations.png" alt="" class="works-item__image" />
 								</div>
 								<h2 class="works-slider__title">Basic Quotations</h2>
 							</div>
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/planfinalization.png" alt="" class="works-item__image" />
 								</div>
 								<h2 class="works-slider__title">Plan Finalization</h2>
 							</div>
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/3dand2ddesign.png" alt="" class="works-item__image" />
 								</div>
 								<h2 class="works-slider__title">3d & 2d Design</h2>
 							</div>
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/materialselection.png" alt="" class="works-item__image" />
 								</div>
 								<h2 class="works-slider__title">Material Selection</h2>
 							</div>
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/revisedquote.png" alt="" class="works-item__image" />
 								</div>
 								<h2 class="works-slider__title">Revised Quote,<br> According to 3d</h2>
 							</div>
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/onsiteexecution.png" alt="" class="works-item__image" />
 								</div>
 								<h2 class="works-slider__title">On Site Execution</h2>
 							</div>
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/accessoryselection.png" alt="" class="works-item__image" />
 								</div>
@@ -449,7 +531,7 @@
 							</div>
 
 							<div class="works-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
 								<div class="works-circle">
 									<img src="asset/img/finalquotation.png" alt="" class="works-item__image" />
 								</div>
@@ -462,9 +544,12 @@
 			</div>
 			<div class="specialization-block">
 				<div class="container">
-					<div class="specialization-block__title heading-smallest">Our specialization</div>
+					<div class="specialization-block__title heading-smallest"
+						style="background: orangered; width: fit-content; color: white; padding: 4px 6px 1px; ">Why
+						Choose Us
+					</div>
 					<div class="row">
-						<div class="col-12 col-lg-4">
+						<div class="col-lg-4 col-sm-6">
 							<div class="specialization-block__item">
 								<div class="specialization-block__image js-motion-svg animated">
 									<i class="fa-solid fa-hand-holding-dollar"></i>
@@ -472,7 +557,7 @@
 								<div class="specialization-block__item-title">Price Match Guarantee</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4">
+						<div class="col-lg-4 col-sm-6">
 							<div class="specialization-block__item">
 								<div class="specialization-block__image js-motion-svg animated">
 									<i class="fa-solid fa-thumbs-up"></i>
@@ -480,7 +565,7 @@
 								<div class="specialization-block__item-title">Two Year Warranty</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4">
+						<div class="col-lg-4 col-sm-6">
 							<div class="specialization-block__item">
 								<div class="specialization-block__image js-motion-svg animated">
 									<i class="fa-solid fa-certificate"></i>
@@ -488,7 +573,7 @@
 								<div class="specialization-block__item-title">No hidden costs</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4">
+						<div class="col-lg-4 col-sm-6">
 							<div class="specialization-block__item">
 								<div class="specialization-block__image js-motion-svg animated">
 									<i class="fa-solid fa-handshake"></i>
@@ -496,7 +581,7 @@
 								<div class="specialization-block__item-title">Flexible Payment Options</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4">
+						<div class="col-lg-4 col-sm-6">
 							<div class="specialization-block__item">
 								<div class="specialization-block__image js-motion-svg animated">
 									<i class="fa-solid fa-gifts"></i>
@@ -505,7 +590,7 @@
 									Wardrobe</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4">
+						<div class="col-lg-4 col-sm-6">
 							<div class="specialization-block__item">
 								<div class="specialization-block__image js-motion-svg animated">
 									<i class="fa-solid fa-microchip"></i>
@@ -516,7 +601,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="payments-block payments-block_template_zoom">
 				<div class="payments-block__main container">
 					<div class="row">
@@ -537,46 +621,51 @@
 					<div class="payments-block__slider swiper-container swiper-container-horizontal">
 						<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 							<div class="payments-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
-								<div class="payments-circle">
-									<img src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-1.jpg"
-										alt="" class="payments-item__image" />
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
+								<div class="payments-circle"
+									style="font-size: 2rem; border: 2px dotted orangered; width: 100px; height: 100px; position: relative; border-radius: 50%; color: #555;">
+									<i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+										class="fa-solid fa-paintbrush"></i>
 								</div>
 								<h2 class="payments-slider__title">Meet A Designer </h2>
 								<p class="payments-slider__text">Meet Our Team Members </p>
 							</div>
 							<div class="payments-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
-								<div class="payments-circle">
-									<img src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-1.jpg"
-										alt="" class="payments-item__image" />
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
+								<div class="payments-circle"
+									style="font-size: 2rem; border: 2px dotted orangered; width: 100px; height: 100px; position: relative; border-radius: 50%; color: #555;">
+									<i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+										class="fa-solid fa-video"></i>
 								</div>
 								<h2 class="payments-slider__title">Book A Renovation </h2>
 								<p class="payments-slider__text">10% Payment While Booking A Renovation </p>
 							</div>
 							<div class="payments-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
-								<div class="payments-circle">
-									<img src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-1.jpg"
-										alt="" class="payments-item__image" />
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
+								<div class="payments-circle"
+									style="font-size: 2rem; border: 2px dotted orangered; width: 100px; height: 100px; position: relative; border-radius: 50%; color: #555;">
+									<i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+										class="fa-solid fa-hourglass-start"></i>
 								</div>
 								<h2 class="payments-slider__title">Execution Begins </h2>
 								<p class="payments-slider__text">40% At The Time Of Execution </p>
 							</div>
 							<div class="payments-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
-								<div class="payments-circle">
-									<img src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-1.jpg"
-										alt="" class="payments-item__image" />
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
+								<div class="payments-circle"
+									style="font-size: 2rem; border: 2px dotted orangered; width: 100px; height: 100px; position: relative; border-radius: 50%; color: #555;">
+									<i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+										class="fa-solid fa-briefcase"></i>
 								</div>
 								<h2 class="payments-slider__title">After Completion Of Civil Work </h2>
 								<p class="payments-slider__text">50% Payment After Completion Of Civil Work </p>
 							</div>
 							<div class="payments-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
-								<div class="payments-circle">
-									<img src="https://gasinforest.com/html/arquito/demo/img/home-minimal-image-1.jpg"
-										alt="" class="payments-item__image" />
+								style="width: 475px; margin-right: 70px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
+								<div class="payments-circle"
+									style="font-size: 2rem; border: 2px dotted orangered; width: 100px; height: 100px; position: relative; border-radius: 50%; color: #555;">
+									<i style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+										class="fa-solid fa-cake-candles"></i>
 								</div>
 								<h2 class="payments-slider__title">Move In And Enjoy</h2>
 								<p class="payments-slider__text">You Can Move In At Your Convenience </p>
@@ -606,7 +695,7 @@
 					<div class="reviews-block__slider swiper-container swiper-container-horizontal">
 						<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 							<div class="reviews-block__slide swiper-slide swiper-slide-active"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; ">
 								<div class="reviews-block__text">I truly enjoyed working with Mr Mrunal , his
 									designs
 									were amazing and whole package was affordable as compared to other competitors ,
@@ -623,7 +712,7 @@
 								</div>
 							</div>
 							<div class="reviews-block__slide swiper-slide swiper-slide-next"
-								style="width: 475px; margin-right: 70px;">
+								style="width: 475px; margin-right: 70px; ">
 								<div class="reviews-block__text">Good Service . Delivered the Flat as per agreed
 									timeline . Provides good support after final interiors
 								</div>
@@ -633,7 +722,7 @@
 									</div><img src="asset/img/quote.png" alt="" class="reviews-block__quote">
 								</div>
 							</div>
-							<div class="reviews-block__slide swiper-slide" style="width: 475px; margin-right: 70px;">
+							<div class="reviews-block__slide swiper-slide" ext-align: center; flex-direction: column;">
 								<div class="reviews-block__text">Sadguru Interior did a commendable Job and they
 									never
 									said no or hesitated in providing the service after completion
@@ -646,7 +735,7 @@
 									</div><img src="asset/img/quote.png" alt="" class="reviews-block__quote">
 								</div>
 							</div>
-							<div class="reviews-block__slide swiper-slide" style="width: 475px; margin-right: 70px;">
+							<div class="reviews-block__slide swiper-slide" ext-align: center; flex-direction: column;">
 								<div class="reviews-block__text">
 									We had an excellent experience with Sadguru interiors. We got modular furniture
 									done
@@ -660,7 +749,7 @@
 									</div><img src="asset/img/quote.png" alt="" class="reviews-block__quote">
 								</div>
 							</div>
-							<div class="reviews-block__slide swiper-slide" style="width: 475px; margin-right: 70px;">
+							<div class="reviews-block__slide swiper-slide" ext-align: center; flex-direction: column;">
 								<div class="reviews-block__text">Love the quality of the interior designer to choose
 									from and the end results were amazing.
 								</div>
@@ -672,7 +761,7 @@
 									</div><img src="asset/img/quote.png" alt="" class="reviews-block__quote">
 								</div>
 							</div>
-							<div class="reviews-block__slide swiper-slide" style="width: 475px; margin-right: 70px;">
+							<div class="reviews-block__slide swiper-slide" ext-align: center; flex-direction: column;">
 								<div class="reviews-block__text">Overall An excellent Piece Of Work By Sadguru
 									Interiors
 									Trully satisfied with Overall design & Execution of the project
@@ -685,7 +774,7 @@
 									</div><img src="asset/img/quote.png" alt="" class="reviews-block__quote">
 								</div>
 							</div>
-							<div class="reviews-block__slide swiper-slide" style="width: 475px; margin-right: 70px;">
+							<div class="reviews-block__slide swiper-slide" ext-align: center; flex-direction: column;">
 								<div class="reviews-block__text">Sincerely work done with perfect design just the
 									way I
 									wanted... Quotes of appreciation to the Sadguru interiors team.
@@ -698,7 +787,7 @@
 									</div><img src="asset/img/quote.png" alt="" class="reviews-block__quote">
 								</div>
 							</div>
-							<div class="reviews-block__slide swiper-slide" style="width: 475px; margin-right: 70px;">
+							<div class="reviews-block__slide swiper-slide" ext-align: center; flex-direction: column;">
 								<div class="reviews-block__text">Professional staff. Good quality. reasonable rate.
 									Good
 									ideas
@@ -714,24 +803,28 @@
 						</div>
 						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 					</div>
-					<button class="btn btn-black" data-toggle="modal" data-target="#feedbackModal">submit a
-						feedback</button>
-					<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" style="z-index: 1000;"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									...
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary">Save changes</button>
+					<div style="display: flex; align-items: center; justify-content: center; text-align: center;">
+						<button class="btn btn-black"
+							style="border: 2px solid orangered; background: transparent; margin: 2rem 0;"
+							data-toggle="modal" data-target="#feedbackModal">mind giving us a
+							review</button>
+						<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" style="z-index: 1000;"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										...
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-dismiss="modal">Close</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -779,55 +872,32 @@
 								<div class="row">
 									<div class="col-12">
 										<select
-											style="width: 100%; padding: 1rem 0rem; background: transparent; border:none; border-bottom: 1px solid #ccc; color: #ccc; margin-bottom: 12px;"
+											style="width: 100%; padding: 1rem 0rem; background: transparent; border:none; border-bottom: 1px solid #222; color: #222; margin-bottom: 12px;"
 											name="Location" placeholder="Locations">
-											<option style="background: #141414; color: white; padding: 1rem;" value=""
-												disabled selected>select your location</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="pune">Pune</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="mumbai">Mumbai</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="nashik">Nashik</option>
+											<option value="" disabled selected>select your location</option>
+											<option value="pune">Pune</option>
+											<option value="mumbai">Mumbai</option>
+											<option value="nashik">Nashik</option>
 										</select>
 									</div>
 									<div class="col-12">
 										<select
-											style="width: 100%; padding: 1rem 0rem; background: transparent; border:none; border-bottom: 1px solid #ccc; color: #ccc; margin-bottom: 12px;"
+											style="width: 100%; padding: 1rem 0rem; background: transparent; border:none; border-bottom: 1px solid #222; color: #222; margin-bottom: 12px;"
 											name="Services" placeholder="select services">
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="select services">select services</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="interior design">Interior Design</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="turnkey project">Turnkey Projects</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="modular kitchen">Modular Kitchen</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="premium bathroom">Premium Bathroom</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="2bhk apartment interior">2BHK Apartment Interior</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="3bhk apartment interior">3BHK Apartment Interior</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="4bhk apartment interior">4BHK Apartment Interior</option>
+											<option value="select services">select services</option>
+											<option value="interior design">Interior Design</option>
+											<option value="turnkey project">Turnkey Projects</option>
+											<option value="modular kitchen">Modular Kitchen</option>
+											<option value="premium bathroom">Premium Bathroom</option>
+											<option value="2bhk apartment interior">2BHK Apartment Interior</option>
+											<option value="3bhk apartment interior">3BHK Apartment Interior</option>
+											<option value="4bhk apartment interior">4BHK Apartment Interior</option>
 										</select>
 									</div>
 									<div class="col-12">
-										<select
-											style="width: 100%; padding: 1rem 0rem; background: transparent; border:none; border-bottom: 1px solid #ccc; color: #ccc; margin-bottom: 12px;"
-											name="Staff Member" placeholder="Staff Member">
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="select" disabled selected>select staff member</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="mrunal thorat">Mrunal Thorat</option>
-											<option style="background: #141414; color: white; padding: 1rem;"
-												value="riddhi dahanukar">Riddhi Dahanukar</option>
-										</select>
-									</div>
-									<div class="col-12">
-										<input type="datetime-local" name="time" id="time"
-											class="contact-block__input-text">
+										<input type="datetime-local"
+											style="width: 100%; padding: 1rem 0rem; background: transparent; border:none; border-bottom: 1px solid #222; color: #222; margin-bottom: 12px;"
+											name="time" id="time" class="contact-block__input-text">
 									</div>
 									<div class="col-12">
 										<input type="text" placeholder="First Name" name="First Name"
@@ -858,91 +928,291 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- <div class="collapse-block">
+			<div class="zoom-counter">
+				<div class="container">
+					<div class="zoom-counter__inner row">
+						<div class="zoom-counter__info col-lg-6">
+							<div class="zoom-counter__subtitle">what we stand for</div>
+							<div class="zoom-counter__title" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+								Interior Designing Focused on Quality and Practicality
+							</div>
+							<div class="zoom-counter__text" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+								<p>You can trust us to not only create your dream home but also do so while maintaining
+									the highest quality. Our focus is to provide innovative designs that prioritize both
+									pragmatism and comfort without compromising on aesthetic beauty. We make sure that
+									every piece of furniture or element of décor adds value, allowing you to experience
+									a space full of functionality as well as real luxury.
+								</p>
+							</div><a href="booking.html"
+								class="zoom-counter__read-more zoom-counter__read-more_inverted"
+								style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">book a call now</a>
+						</div>
+						<div class="zoom-counter__card col-lg-6">
+							<img src="asset/img/poster.jpg" class="img-fluid" style="object-fit: cover;" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="collapse-block">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-lg-6">
-							<div class="collapse-list">
-								<div class="collapse-list__collapse"><a href="#collapse1" data-toggle="collapse"
-										class="collapse-list__collapse-head collapsed">Turnkey Projects<span
-											class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
-									<div id="collapse1" class="collapse-list__collapse-text collapse">
-										<div class="collapse-list__collapse-text-inner">
-											We offer comprehensive space planning services for creating beautiful and
-											functional living environments and complete Turnkey Projects
-										</div>
-									</div>
-								</div>
-								<div class="collapse-list__collapse"><a href="#collapse2" data-toggle="collapse"
-										class="collapse-list__collapse-head collapsed">Modular Furniture Selection<span
-											class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
-									<div id="collapse2" class="collapse-list__collapse-text collapse">
-										<div class="collapse-list__collapse-text-inner">
-											Our furniture selection service provides expert advice and guidance,
-											ensuring you choose the perfect furniture to suit your needs.
-										</div>
-									</div>
-								</div>
-								<div class="collapse-list__collapse"><a href="#collapse3" data-toggle="collapse"
-										class="collapse-list__collapse-head collapsed">Lighting Design<span
-											class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
-									<div id="collapse3" class="collapse-list__collapse-text collapse">
-										<div class="collapse-list__collapse-text-inner">
-											We offer a comprehensive selection of quality Light design pieces, perfect
-											for any interior design project which suits your decor at Affordable Prices.
-										</div>
-									</div>
-								</div>
-								<div class="collapse-list__collapse"><a href="#collapse4" data-toggle="collapse"
-										class="collapse-list__collapse-head collapsed">2Bhk , 3Bhk , 4Bhk
-										Apartments<span
-											class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
-									<div id="collapse4" class="collapse-list__collapse-text collapse">
-										<div class="collapse-list__collapse-text-inner">
-											Our range of designs includes a variety of styles, colors and materials,
-											allowing you to find the perfect piece for any space and build your Fully
-											Furnished Apartments .
-										</div>
-									</div>
-								</div>
+						<div class="col-12">
+							<div class="heading-group">
+								<div class="heading-group__title">Frequently Asked <br>Questions</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-6">
+						<div class="col-12 col-lg-5">
+							<div role="tabs" class="tabs__list">
+								<!-- Vertical tabs -->
+								<ul role="tablist" id="verticalTabs">
+									<li role="tab"
+										style="padding: 1rem; border: 2px solid orangered; margin-bottom: 1rem; list-style: none;"
+										aria-selected="true" aria-disabled="false" onclick="showTab(1)">
+										Why Choose Us
+									</li>
+									<li role="tab"
+										style="padding: 1rem; border: 2px solid orangered; margin-bottom: 1rem; list-style: none;"
+										aria-selected="false" aria-disabled="false" onclick="showTab(2)">
+										Payment Questions
+									</li>
+									<li role="tab"
+										style="padding: 1rem; border: 2px solid orangered; margin-bottom: 1rem; list-style: none;"
+										aria-selected="false" aria-disabled="false" onclick="showTab(3)">
+										Return Questions
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 offset-lg-1" role="tabpanel">
 							<div class="collapse-list">
-								<div class="collapse-list__collapse"><a href="#collapse5" data-toggle="collapse"
-										class="collapse-list__collapse-head collapsed">Modular Kitchen Designing <span
-											class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
-									<div id="collapse5" class="collapse-list__collapse-text collapse">
-										<div class="collapse-list__collapse-text-inner">We offer comprehensive space
-											planning service and manage your kitchen efficiently that can manage
-											everything according to your needs .</div>
+								<!-- Content for each tab -->
+								<div id="tab1" class="collapse-list__collapse">
+									<div class="collapse-list">
+										<div class="collapse-list__collapse"><a href="#collapse1" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">What services do you
+												provide?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse1" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													We provide interior design services, space planning, furniture
+													selection, and interior design consulting.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse2" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">What is your pricing
+												structure?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse2" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													Our pricing structure depends on the scope of the project, the
+													complexity of the design, and the estimated time for completion.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse3" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">Do you offer custom
+												design solutions?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse3" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													Yes, we offer custom design solutions tailored to your specific
+													needs.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse">
+											<a href="#collapse4" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">
+												Are your services available online?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse4" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">Yes, we offer virtual
+													design services as well as in-person design services.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse">
+											<a href="#collapse5" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">
+												How long does it take to complete a project?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse5" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													The time it takes to complete a project depends on the scope of the
+													project, complexity of the design, and the estimated time for
+													completion.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse">
+											<a href="#collapse6" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">
+												How do I get started?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse6" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													The first step is to contact us to discuss the project in detail and
+													provide us with your design ideas. We will then provide you with a
+													proposal outlining the scope of the project and estimated timeline.
+												</div>
+											</div>
+										</div>
+
 									</div>
 								</div>
-								<div class="collapse-list__collapse"><a href="#collapse6" data-toggle="collapse"
-										class="collapse-list__collapse-head collapsed">Floor Covering Selection<span
-											class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
-									<div id="collapse6" class="collapse-list__collapse-text collapse">
-										<div class="collapse-list__collapse-text-inner">Our floor covering selection
-											service offers a wide range of styles to help you create the look and feel
-											you desire for your home.</div>
+								<div id="tab2" class="collapse-list__collapse">
+									<div class="collapse-list">
+										<div class="collapse-list__collapse">
+											<a href="#collapse7" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">What is your pricing
+												structure?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse7" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													Our pricing structure depends on the scope of the project, the
+													complexity of the design, and the estimated time for completion.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse8" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">Do you offer custom
+												design solutions?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse8" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													Yes, we offer custom design solutions tailored to your specific
+													needs.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse9" data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">Are your services
+												available online?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse9" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													Yes, we offer virtual design services as well as in-person design
+													services.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse10"
+												data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">How long does it take to
+												complete a project?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse10" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">The time it takes to
+													complete a project depends on the scope of the project, complexity
+													of the design, and the estimated time for completion.</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse11"
+												data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">How do I get
+												started?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse11" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">The first step is to
+													contact us to discuss the project in detail and provide us with your
+													design ideas. We will then provide you with a proposal outlining the
+													scope of the project and estimated timeline.</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse12"
+												data-toggle="collapse" class="collapse-list__collapse-head collapsed">Do
+												you provide 3D
+												renderings?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse12" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">Yes, we provide 3D
+													renderings to help visualize the design and make sure that the end
+													result meets your expectations.</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="collapse-list__collapse"><a href="#collapse7" data-toggle="collapse"
-										class="collapse-list__collapse-head collapsed">Bathroom Designing
-										<span
-											class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
-									<div id="collapse7" class="collapse-list__collapse-text collapse">
-										<div class="collapse-list__collapse-text-inner">Our Bathroom selection service
-											offers a wide range of styles to help you create the look and feel you
-											desire for your bathroom</div>
+								<div id="tab3" class="collapse-list__collapse">
+									<div class="collapse-list">
+										<div class="collapse-list__collapse"><a href="#collapse13"
+												data-toggle="collapse" class="collapse-list__collapse-head collapsed">Do
+												you offer custom
+												design solutions?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse13" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">Yes, we offer custom
+													design solutions tailored to your specific needs.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse14"
+												data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">Are your services
+												available online?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse14" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">Yes, we offer virtual
+													design services as well as in-person design services.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse15"
+												data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">How long does it take to
+												complete a project?<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse15" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">
+													The time it takes to complete a project depends on the scope of the
+													project, complexity of the design, and the estimated time for
+													completion.
+												</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse16"
+												data-toggle="collapse"
+												class="collapse-list__collapse-head collapsed">How do I get started?
+												<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse16" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">The first step is to
+													contact us to discuss the project in detail and provide us with your
+													design ideas. We will then provide you with a proposal outlining the
+													scope of the project and estimated timeline.</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse17"
+												data-toggle="collapse" class="collapse-list__collapse-head collapsed">Do
+												you provide 3D
+												renderings?
+												<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse17" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">Yes, we provide 3D
+													renderings to help visualize the design and make sure that the end
+													result meets your expectations.</div>
+											</div>
+										</div>
+										<div class="collapse-list__collapse"><a href="#collapse18"
+												data-toggle="collapse" class="collapse-list__collapse-head collapsed">Do
+												you provide fabric and
+												finish selections?
+												<span
+													class="collapse-list__collapse-head-icon fa-solid fa-chevron-up"></span></a>
+											<div id="collapse18" class="collapse-list__collapse-text collapse">
+												<div class="collapse-list__collapse-text-inner">Yes, we provide fabric
+													and finish selections for all of our projects.
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 		</main>
 		<footer class="footer-studio footer footer_fixed">
 			<div class="container">
@@ -950,58 +1220,51 @@
 					<div class="footer-studio__column col-6 col-xl-6">
 						<div class="footer-studio__group-title">Company</div>
 						<ul class="footer-studio__list">
-							<li class="footer-studio__list-item"><a href="/about-us.html"
-									class="footer-studio__list-link">About</a>
-							</li>
-							<li class="footer-studio__list-item"><a href="/booking.html"
-									class="footer-studio__list-link">Book Now</a>
-							</li>
 							<li class="footer-studio__list-item"><a href="/projects.html"
 									class="footer-studio__list-link">Projects</a>
 							</li>
 							<li class="footer-studio__list-item"><a href="/services.html"
 									class="footer-studio__list-link">Services</a>
 							</li>
+							<li class="footer-studio__list-item"><a href="/booking.html"
+									class="footer-studio__list-link">Book Now</a>
+							</li>
+							<li class="footer-studio__list-item"><a href="/about-us.html"
+									class="footer-studio__list-link">About</a>
+							</li>
 						</ul>
 					</div>
 					<div class="footer-studio__column col-12 col-sm-6 col-xl-6">
 						<div class="footer-studio__group-title">Get In Touch</div>
-						<p>FW67+3J8, Undri - Hadapsar Rd, Kad Nagar, Undri, <br> Pune, Maharashtra 411028</p>
+						<p>703, Sai Vishwa Society, Katraj, <br> Pune - 411046 (Near Bhumkar Chowk)
+						</p>
 						<p><a href="mailto:sadguruinteriors.in@gmail.com">sadguruinteriors.in@gmail.com</a></p>
-						<p>+91 95612 60467</p>
+						<p><a href="tel:+919561260467">+91 95612 60467</a></p>
 					</div>
-					<!-- <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
-						<div class="footer-studio__group-title">Newsletter</div>
-						<p>Subscribe and get 10% off from our furniture store</p>
-						<form action="#" class="footer-studio__form"><input placeholder="Enter your email..."
-								class="footer-studio__input" type="text"><button
-								class="footer-studio__submit">Subscribe<span
-									class="footer-studio__submit-icon fa-solid fa-caret-right"></span></button></form>
-					</div> -->
 				</div>
 				<div class="footer-studio__bottom">
 					<div class="row">
 						<div class="footer-studio__column col-12 col-sm-6">
-							<div class="footer-studio__copyright">© 2019 <strong>Sadguru Interior.</strong> All Rights
+							<div class="footer-studio__copyright">© 2023 <strong>Sadguru Interior.</strong> All Rights
 								Reserved.
 								Design by <a href="mailto:ashu.ydv2001@gmail.com">ashuydv</a></div>
 						</div>
 						<div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3">
 							<div class="footer-studio__socials">
-								<a href="#" class="footer-studio__social">
+								<a href="https://wa.me/message/I4NUI666D7FSE1" class="footer-studio__social">
 									<i class="fa-brands fa-whatsapp"></i>
 								</a>
-								<a href="#" class="footer-studio__social">
+								<a href="https://www.facebook.com/sadguruinterior?mibextid=ZbWKwL"
+									class="footer-studio__social">
 									<i class="fa-brands fa-facebook"></i>
 								</a>
-								<a href="#" class="footer-studio__social">
+								<a href="https://www.instagram.com/sadguru_interior_and_associate/"
+									class="footer-studio__social">
 									<i class="fa-brands fa-instagram"></i>
 								</a>
-								<a href="#" class="footer-studio__social">
+								<a href="https://youtube.com/@Interiordesigner_pune?si=l4wJArfzTgiF5K7u"
+									class="footer-studio__social">
 									<i class="fa-brands fa-youtube"></i>
-								</a>
-								<a href="#" class="footer-studio__social">
-									<i class="fa-brands fa-x-twitter"></i>
 								</a>
 							</div>
 						</div>
@@ -1027,6 +1290,25 @@
 	<script src="asset/js/TimelineLite.min.js"></script>
 	<script src="asset/js/typed.min.js"></script>
 	<script src="asset/js/vivus.min.js"></script>
+	<script>
+		function showTab(tabNumber) {
+			// Hide all tabs
+			for (let i = 1; i <= 3; i++) {
+				document.getElementById('tab' + i).style.display = 'none';
+				document.querySelector(`#verticalTabs li:nth-child(${i})`).setAttribute('aria-selected', 'false');
+				document.querySelector(`#verticalTabs li:nth-child(${i})`).classList.remove('active');
+			}
+
+			// Show the selected tab
+			document.getElementById('tab' + tabNumber).style.display = 'block';
+			document.querySelector(`#verticalTabs li:nth-child(${tabNumber})`).setAttribute('aria-selected', 'true');
+			document.querySelector(`#verticalTabs li:nth-child(${tabNumber})`).classList.add('active');
+		}
+
+		// Show the initially selected tab (e.g., Why Choose Us)
+		showTab(1);
+
+	</script>
 
 	<!--Theme JS-->
 	<script src="asset/js/theme.js"></script>
