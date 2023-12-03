@@ -3,11 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PLH863H6');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PLH863H6');</script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -433,7 +436,134 @@
     <!--Theme JS-->
     <script src="asset/js/theme.js"></script>
     <script src="asset/js/butterup.min.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        import {
+            getFirestore,
+            collection,
+            addDoc,
+        } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBYORjHgx8NEzVcw7-e04sc0dTMHkppL3s",
+            authDomain: "sadguruinterior-9e0ee.firebaseapp.com",
+            projectId: "sadguruinterior-9e0ee",
+            storageBucket: "sadguruinterior-9e0ee.appspot.com",
+            messagingSenderId: "405316056987",
+            appId: "1:405316056987:web:09f5637e4d29427b8b533e",
+            measurementId: "G-V23F8VGYV9",
+        };
+
+        // Initialize Firebase
+        // Common setup for Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const analytics = getAnalytics(app);
+
+        // Function to handle the submission of the query form
+        const handleQueryFormSubmit = async (event) => {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+
+            try {
+                const docRefQueryForm = await addDoc(
+                    collection(db, "queryform"),
+                    formObject
+                );
+                console.log("Document written to queryform with ID: ", docRefQueryForm.id);
+
+                // Display success message
+                butterup.toast({
+                    title: "🎉 Success!",
+                    message: "Will get back to you shortly",
+                    location: "top-right",
+                    type: "success",
+                });
+
+                // Optionally, you can reset the form after successful submission
+                form.reset();
+            } catch (error) {
+                console.error("Error adding document: ", error);
+
+                // Display error message
+                butterup.toast({
+                    title: "Error!",
+                    message: "Please try again",
+                    location: "top-right",
+                    type: "error",
+                });
+            }
+        };
+
+        // Function to handle the submission of the booking form
+        const handleBookingFormSubmit = async (event) => {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+
+            try {
+                const docRefBookingForm = await addDoc(
+                    collection(db, "bookingform"),
+                    formObject
+                );
+                console.log(
+                    "Document written to bookingform with ID: ",
+                    docRefBookingForm.id
+                );
+
+                // Display success message
+                butterup.toast({
+                    title: "🎉 Success!",
+                    message: "Will get back to you shortly",
+                    location: "top-right",
+                    type: "success",
+                });
+
+                // Optionally, you can reset the form after successful submission
+                form.reset();
+                window.location.href = "thank-you.html";
+            } catch (error) {
+                console.error("Error adding document: ", error);
+
+                // Display error message
+                butterup.toast({
+                    title: "Error!",
+                    message: "Please try again",
+                    location: "top-right",
+                    type: "error",
+                });
+            }
+        };
+
+        // Attach the form submission handlers to the forms
+        const queryForm = document.getElementById("queryForm");
+        const bookingForm = document.getElementById("bookingForm");
+
+        if (queryForm) {
+            queryForm.addEventListener("submit", handleQueryFormSubmit);
+        }
+
+        if (bookingForm) {
+            bookingForm.addEventListener("submit", handleBookingFormSubmit);
+        }
+
+    </script>
     <script type="module" src="asset/js/main.js"></script>
+
 </body>
 
 </html>

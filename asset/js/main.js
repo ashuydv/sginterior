@@ -95,7 +95,6 @@ const handleBookingFormSubmit = async (event) => {
     // Optionally, you can reset the form after successful submission
     form.reset();
     window.location.href = "thank-you.html";
-
   } catch (error) {
     console.error("Error adding document: ", error);
 
