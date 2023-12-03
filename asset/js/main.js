@@ -16,31 +16,30 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+// Common setup for Firebase
 const app = initializeApp(firebaseConfig);
-
 const db = getFirestore(app);
 
-const handleFormSubmit = async (event) => {
+// Function to handle the submission of the query form
+const handleQueryFormSubmit = async (event) => {
   event.preventDefault();
 
   const form = event.target;
   const formData = new FormData(form);
 
-  // Create an object to hold form data
   const formObject = {};
   formData.forEach((value, key) => {
     formObject[key] = value;
   });
 
   try {
-    // Determine which form is being submitted based on the form's ID
-    const collectionName =
-      form.id === "contactForm" ? "queryform" : "bookingform";
+    const docRefQueryForm = await addDoc(
+      collection(db, "queryform"),
+      formObject
+    );
+    console.log("Document written to queryform with ID: ", docRefQueryForm.id);
 
-    // Add form data to Firestore
-    const docRef = await addDoc(collection(db, collectionName), formObject);
-    console.log(`Document written to ${collectionName} with ID: `, docRef.id);
-
+    // Display success message
     butterup.toast({
       title: "🎉 Success!",
       message: "Will get back to you shortly",
@@ -53,6 +52,7 @@ const handleFormSubmit = async (event) => {
   } catch (error) {
     console.error("Error adding document: ", error);
 
+    // Display error message
     butterup.toast({
       title: "Error!",
       message: "Please try again",
@@ -62,9 +62,61 @@ const handleFormSubmit = async (event) => {
   }
 };
 
-// Attach the form submission handler to the forms
+// Function to handle the submission of the booking form
+const handleBookingFormSubmit = async (event) => {
+  event.preventDefault();
+
+  const form = event.target;
+  const formData = new FormData(form);
+
+  const formObject = {};
+  formData.forEach((value, key) => {
+    formObject[key] = value;
+  });
+
+  try {
+    const docRefBookingForm = await addDoc(
+      collection(db, "bookingform"),
+      formObject
+    );
+    console.log(
+      "Document written to bookingform with ID: ",
+      docRefBookingForm.id
+    );
+
+    // Display success message
+    butterup.toast({
+      title: "🎉 Success!",
+      message: "Will get back to you shortly",
+      location: "top-right",
+      type: "success",
+    });
+
+    // Optionally, you can reset the form after successful submission
+    form.reset();
+    window.location.href = "thank-you.html";
+
+  } catch (error) {
+    console.error("Error adding document: ", error);
+
+    // Display error message
+    butterup.toast({
+      title: "Error!",
+      message: "Please try again",
+      location: "top-right",
+      type: "error",
+    });
+  }
+};
+
+// Attach the form submission handlers to the forms
 const queryForm = document.getElementById("queryForm");
 const bookingForm = document.getElementById("bookingForm");
 
-queryForm.addEventListener("submit", handleFormSubmit);
-bookingForm.addEventListener("submit", handleFormSubmit);
+if (queryForm) {
+  queryForm.addEventListener("submit", handleQueryFormSubmit);
+}
+
+if (bookingForm) {
+  bookingForm.addEventListener("submit", handleBookingFormSubmit);
+}
