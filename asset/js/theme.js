@@ -799,7 +799,7 @@
       ".works-block__control_next"
     );
     var sliderElement = $(".works-block__slider");
- 
+
     if (sliderElement.length) {
       var swiper = new Swiper(sliderElement, {
         slidesPerView: 1,
@@ -883,6 +883,36 @@
       ".reviews-block__control_next"
     );
     var sliderElement = $(".reviews-block__slider");
+
+    if (sliderElement.length) {
+      var swiper = new Swiper(sliderElement, {
+        slidesPerView: 1,
+        spaceBetween: 70,
+        breakpointsInverse: true,
+        breakpoints: {
+          992: {
+            slidesPerView: 2,
+          },
+        },
+      });
+      buttonPrevElement.addEventListener("click", function () {
+        swiper.slidePrev();
+      });
+      buttonNextElement.addEventListener("click", function () {
+        swiper.slideNext();
+      });
+    }
+  })();
+
+  // offers-block
+  (function () {
+    var buttonPrevElement = document.querySelector(
+      ".offers-block__control_prev"
+    );
+    var buttonNextElement = document.querySelector(
+      ".offers-block__control_next"
+    );
+    var sliderElement = $(".offers-block__slider");
 
     if (sliderElement.length) {
       var swiper = new Swiper(sliderElement, {

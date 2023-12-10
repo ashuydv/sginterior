@@ -6489,7 +6489,8 @@ reviews-block
 
 .reviews-block__slider,
 .payments-block__slider,
-.works-block__slider {
+.works-block__slider,
+.offers-block__slider {
   margin-top: 76px;
 }
 
@@ -6503,6 +6504,11 @@ reviews-block
   background: #f7f7f7;
   padding: 0px;
   color: #222;
+}
+
+.offers-block__slide {
+  max-width: 1000px;
+  width: 100%;
 }
 
 .works-block__slide {
@@ -6593,6 +6599,17 @@ reviews-block
   position: absolute;
   right: 0;
   top: 12px;
+}
+
+.offers-block__quote {
+  width: 1200px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.offers-block__controls {
+  display: none;
 }
 
 .reviews-block__controls,

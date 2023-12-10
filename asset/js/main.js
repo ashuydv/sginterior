@@ -45,7 +45,7 @@ const handleQueryFormSubmit = async (event) => {
       message: "Will get back to you shortly",
       location: "top-right",
       type: "success",
-    });
+    }); 
 
     // Optionally, you can reset the form after successful submission
     form.reset();
